@@ -1,13 +1,10 @@
+@import url("print.css") print;
+
 .footer-website:visited {
-  color: var(--bs-info) !important;
+  color: var(--bs-primary) !important;
 }
 
 body {
-  padding-top: 5.5rem;
-}
-
-/* csak a form oldalon ne legyen body padding */
-body.form-page {
   padding-top: 5.5rem;
 }
 
@@ -119,8 +116,9 @@ body.high-contrast .btn:hover {
 .legal-link {
   text-decoration: underline;
   font-weight: 500;
+  color: var(--bs-info);
 }
 
 .legal-link:visited {
-  color: var(--bs-info);
+  color: var(--bs-primary);
 }
