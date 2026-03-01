@@ -1,0 +1,126 @@
+.footer-website:visited {
+  color: var(--bs-info) !important;
+}
+
+body {
+  padding-top: 5.5rem;
+}
+
+/* csak a form oldalon ne legyen body padding */
+body.form-page {
+  padding-top: 5.5rem;
+}
+
+/* ===== LÁTÁSSÉRÜLT / DARK MODE OVERRIDE ===== */
+
+html[data-bs-theme="dark"] .bg-light {
+  background-color: #121212 !important;
+}
+
+html[data-bs-theme="dark"] .bg-white {
+  background-color: #1e1e1e !important;
+}
+
+html[data-bs-theme="dark"] .bg-body {
+  background-color: #161616 !important;
+}
+
+html[data-bs-theme="dark"] .table-light {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+}
+
+html[data-bs-theme="dark"] .card {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+}
+
+html[data-bs-theme="dark"] details {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+}
+
+html[data-bs-theme="dark"] .table {
+  color: #fff !important;
+}
+
+html[data-bs-theme="dark"] .border {
+  border-color: #555 !important;
+}
+
+/* ===== FORM OLDAL HÁTTÉR ===== */
+
+.form-bg {
+  position: relative;
+  min-height: 100vh;
+  background: url('./media/bg.png') center/cover no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3rem 2rem;
+}
+
+.form-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* halványítás */
+}
+
+.form-container {
+  position: relative;
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 40rem;
+  box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.2);
+}
+
+
+/* Form háttér */
+body.high-contrast .form-bg {
+  background: #000 !important;
+}
+
+/* Form doboz */
+body.high-contrast .form-container {
+  background: #111 !important;
+  color: #fff !important;
+  border: 2px solid #fff;
+}
+
+/* Inputok */
+body.high-contrast input,
+body.high-contrast textarea,
+body.high-contrast select {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+/* Placeholder */
+body.high-contrast ::placeholder {
+  color: #bbb !important;
+}
+
+/* Gombok */
+body.high-contrast .btn {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+body.high-contrast .btn:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.legal-link {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.legal-link:visited {
+  color: var(--bs-info);
+}

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tripster - Kezdőlap</title>
+  <link rel="icon" type="image/png" href="./media/icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3 shadow-sm border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./media/logo.png" alt="Logo" height="55">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold fs-5 active" href="./index.html">Főoldal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold fs-5" href="./about.html">Rólunk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold fs-5" href="./form.html">Ajánlatkérés</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bg-light py-5 ">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-12 col-lg-6">
+            <p class="h2 fw-bold">
+              Több mint út
+            </p>
+            <p class="lead">
+              A Tripster azoknak szól, akik nem csak elutazni akarnak, hanem kilépni a komfortzónából. Modern, átlátható
+              és stílusos utazásszervezés, ami időt spórol és élményt ad. Gondosan összeállított ajánlatok, személyre
+              szabott megoldások és folyamatos támogatás. Nem tömegélményeket árulunk, hanem olyan utakat, amikre
+              évekkel később is emlékezni fogsz. A következő élményed egy döntésre van.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div id="tripsterCarousel" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#tripsterCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#tripsterCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#tripsterCarousel" data-bs-slide-to="2"></button>
+              </div>
+              <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                  <img src="./media/slide1.png" class="d-block w-100" alt="Utazás 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./media/slide2.png" class="d-block w-100" alt="Utazás 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./media/slide3.png" class="d-block w-100" alt="Utazás 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#tripsterCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#tripsterCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="py-5 bg-body">
+      <p class="h3 fw-bold text-center mb-5">
+        Ajánlataink
+      </p>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="./media/card1.png" class="card-img-top" alt="Utazás 1">
+              <div class="card-body d-flex flex-column">
+                <p class="h6 fw-bold">Japán</p>
+                <p class="card-text">
+                  Ultramodern felhőkarcolók és ősi templomok egy utazásban. Neonfényes éjszakák Tokióban,
+                  cseresznyevirágos nyugalom Kiotóban. Két világ, egy felejthetetlen élmény.
+                </p>
+                <a href="./form.html" class="btn btn-dark mt-auto">
+                  Ajánlatot kérek
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="./media/card2.png" class="card-img-top" alt="Utazás 2">
+              <div class="card-body d-flex flex-column">
+                <p class="h6 fw-bold">Tahiföld</p>
+                <p class="card-text">
+                  Türkiz víz, pálmafák és drámai mészkősziklák. Nappal paradicsomi nyugalom, este vibráló élet. Az igazi
+                  egzotikus kikapcsolódás.
+                </p>
+                <a href="./form.html" class="btn btn-dark mt-auto">
+                  Ajánlatot kérek
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="./media/card3.png" class="card-img-top" alt="Utazás 3">
+              <div class="card-body d-flex flex-column">
+                <p class="h6 fw-bold">Santorini</p>
+                <p class="card-text">
+                  Fehér falak, kék kupolák és aranyszínű naplementék a végtelen tenger felett. Tökéletes romantika és
+                  mediterrán luxus egy helyen.
+                </p>
+                <a href="./form.html" class="btn btn-dark mt-auto">
+                  Ajánlatot kérek
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="./media/card4.png" class="card-img-top" alt="Utazás 4">
+              <div class="card-body d-flex flex-column">
+                <p class="h6 fw-bold">New York</p>
+                <p class="card-text">
+                  A város, ami sosem alszik. Ikonikus látképek, Broadway-fények és lüktető utcák. Itt minden sarkon
+                  történik valami.
+                </p>
+                <a href="./form.html" class="btn btn-dark mt-auto">
+                  Ajánlatot kérek
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="./media/card5.png" class="card-img-top" alt="Utazás 5">
+              <div class="card-body d-flex flex-column">
+                <p class="h6 fw-bold">Izland</p>
+                <p class="card-text">
+                  Vulkánok, vízesések és északi fény egyetlen utazásban. Nyers természet, lélegzetelállító tájak és
+                  valódi kaland.
+                </p>
+                <a href="./form.html" class="btn btn-dark mt-auto">
+                  Ajánlatot kérek
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="./media/card6.png" class="card-img-top" alt="Utazás 6">
+              <div class="card-body d-flex flex-column">
+                <p class="h6 fw-bold">Dubaj</p>
+                <p class="card-text">
+                  Luxus a sivatag szélén. Felhőkarcolók, privát strandok és sivatagi kalandok. Ha szintet akarsz lépni,
+                  Dubaj a válasz.
+                </p>
+                <a href="./form.html" class="btn btn-dark mt-auto">
+                  Ajánlatot kérek
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-light py-5">
+      <div class="container">
+        <p class="h3 fw-bold text-center mb-5">
+          Fedezd fel a világot!
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+
+            <div class="ratio ratio-16x9 mb-4">
+              <video class="rounded shadow" controls poster="./media/tumbnail.png">
+                <source src="./media/video.mp4" type="video/mp4">
+                A böngésződ nem támogatja a videó lejátszást.
+              </video>
+            </div>
+            <details class="bg-white p-4 rounded shadow-sm">
+              <summary class="fw-semibold">
+                Videó leírás megtekintése
+              </summary>
+              <p>
+                A 32 másodperces, 16:9 képarányú Tripster promóvideó inspirálófilmes hangulatú utazási reklám, amely
+                dinamikus, fokozatosan erősödő zenei aláfestéssel és magabiztos narrációval mutatja be a márkát. A videó
+                egy trópusi napfelkeltével indul, majd egy kiotói templom és Tokió neonfényes utcái jelennek meg. Ez
+                után egy felszálló repülőgép látható. Ezt követően élénk montázsban láthatók nemzetközi úti célok,
+                köztük Dubaj, Thaiföld, New York, Izland és Santorini ikonikus látképei. A képeken boldog utazók fedezik
+                fel a világot, naplementét néznek, városban vagy tengerparton sétálnak. A narráció hangsúlyozza, hogy az
+                utazás több mint foglalás, élmény és döntés a hétköznapokból való kilépésre. Majd megjelenik a Tripster
+                logó egy repülőgéppel az égen.
+              </p>
+              <ul class="mb-0">
+                <li>Több nemzetközi úti cél bemutatása</li>
+                <li>Filmes, vibráló vizuális stílus</li>
+                <li>Inspiráló narráció és zenei aláfestés</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-body">
+      <div class="container">
+        <p class="h3 fw-bold text-center mb-5">
+          Na, de miért a Tripster?
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="table-responsive shadow-sm overflow-hidden">
+              <table class="table table-bordered text-center align-middle mb-0">
+                <thead class="table-secondary">
+                  <tr>
+                    <th>Évek</th>
+                    <th>Eladott utazások</th>
+                    <th>Elégedettségi arány</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2025</td>
+                    <td>1860 út 12 országba</td>
+                    <td>96% pozitív visszajelzés</td>
+                  </tr>
+                  <tr>
+                    <td>2024</td>
+                    <td>1250 út 8 országba</td>
+                    <td>92% pozitív visszajelzés</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div class="col-12 col-lg-8">
+              <details class="bg-light rounded shadow-sm p-4">
+                <summary class="fw-semibold">
+                  Táblázat leírás megtekintése
+                </summary>
+                <p class="mb-0">
+                  A fenti adatok jól mutatják a Tripster folyamatos növekedését és megbízhatóságát. Az eladott utazások
+                  száma évről évre emelkedik, miközben az ügyfélelégedettségi arány stabilan magas marad. Ez azt jelzi,
+                  hogy nemcsak egyre többen választanak minket, hanem valóban elégedetten térnek haza az utazásukról.
+                </p>
+              </details>
+            </div>
+          </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white py-5 border-top ">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 col-md-4">
+          <p class="h3 fw-bold">Tripster</p>
+          <p class="mb-3">
+            Utazás egyszerűen, élmények kompromisszumok nélkül.
+          </p>
+          <button id="contrastToggle" class="btn btn-light fw-semibold">
+            Látássérült mód
+          </button>
+        </div>
+        <div class="col-12 col-md-4">
+          <p class="h5 fw-bold mb-3">Menü</p>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="./index.html" class="link-light text-decoration-none">Főoldal</a>
+            </li>
+            <li class="mb-2">
+              <a href="./about.html" class="link-light text-decoration-none">Rólunk</a>
+            </li>
+            <li>
+              <a href="./form.html" class="link-light text-decoration-none">Ajánlatkérés</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <p class="h5 fw-bold mb-3">Kapcsolat</p>
+          <ul class="list-unstyled">
+            <li class="mb-2">Email: info@tripster.hu</li>
+            <li class="mb-2">Telefon: +36 30 123 4567</li>
+            <li>
+              Honlap:
+              <a href="https://tripster.com" class="link-light fw-semibold text-decoration-underline footer-website">
+                tripster.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-light my-4">
+      <div class="text-center small">
+        © 2026 Tripster. Minden jog fenntartva.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
