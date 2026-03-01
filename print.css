@@ -1,0 +1,77 @@
+/* ============================= */
+/* NYOMTATÁSI NÉZET */
+/* ============================= */
+
+body.high-contrast {
+  background: white !important;
+  color: black !important;
+}
+
+/* Fekete szöveg */
+body * {
+  color: black !important;
+}
+
+/* Tartalom teljes szélesség */
+.container,
+.container-lg,
+.container-fluid {
+  max-width: 100% !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+/* Navigáció és kinyitható elemek eltüntetése */
+nav,
+details,
+footer,
+button,
+.carousel,
+.ratio {
+  display: none !important;
+}
+
+/* Sorok közti margó csökkentése */
+.row {
+  margin: 0 !important;
+}
+
+/* Linkek URL megjelenítése */
+a::after {
+  content: " (" attr(href) ")";
+  font-size: 90%;
+}
+
+/* Táblázatok festéktakarékos mód */
+table,
+table * {
+  background-color: white !important;
+  color: black !important;
+}
+
+table tr * {
+  border: none !important;
+  padding: 5px !important;
+}
+
+/* Carousel eltüntetése */
+.carousel {
+  display: none !important;
+}
+
+/* Képek kisebb méret */
+img {
+  max-width: 50% !important;
+}
+
+/* Pre elem kisebb betű */
+pre {
+  font-size: 75% !important;
+}
+
+/* Nyomtatásban látható plusz szöveg */
+.nyomtatas {
+  display: block;
+  border: 1px dashed gray;
+  padding: 10px;
+}
