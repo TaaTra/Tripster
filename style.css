@@ -122,3 +122,7 @@ body.high-contrast .btn:hover {
 .legal-link:visited {
   color: var(--bs-primary);
 }
+
+body.high-contrast #charCount {
+  color: #fff !important;
+}
